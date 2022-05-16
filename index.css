@@ -40,7 +40,7 @@ input[name="slider"] {
 .slides {
   overflow-x: hidden;
   width: 100%;
-  height: 50%;
+  height: 70%;
 }
 .overflow {
   height: 100%;
@@ -51,16 +51,16 @@ input[name="slider"] {
 }
 
 .slide1 {
-  background: red;
+  background: url(./images/1.jpg);
 }
 .slide2 {
-  background: black;
+  background: url(./images/2.jpg);
 }
 .slide3 {
-  background: white;
+  background: url(./images/3.jpg);
 }
 .slide4 {
-  background: orange;
+  background: url(./images/4.jpg);
 }
 .slide {
   width: calc(100% / var(--countSlides));
@@ -68,6 +68,8 @@ input[name="slider"] {
   background-size: contain;
   border-radius: 5%;
   background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(158, 139, 139, .2);
 }
 .description-wrapper {
   height: 5%;
@@ -89,6 +91,9 @@ input[name="slider"] {
   display: flex;
   align-items: center;
 }
+.titles .slide {
+  background-color: black;
+} 
 
 .controls {
   width: 30%;
@@ -151,6 +156,7 @@ label:active .circle {
     order: -1;
   }
   .titles {
+    width: 100%;
     margin-right: auto;
   }
 }
